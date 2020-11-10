@@ -4,4 +4,10 @@
   Details: <%= @task.details %>
 </p>
 
+<% if @task.completed == true %>
+  <p> "√ - This Task is completed"</p>
+<% else %>
+  <p>X - This Task is not completed</p>
+<% end %>
+
 <%= link_to "Go back to the list", "/tasks" %>
